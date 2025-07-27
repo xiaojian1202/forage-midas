@@ -1,0 +1,9 @@
+general:
+  kafka-topic: midasTransaction
+
+spring:
+  kafka:
+    consumer:
+      group-id: midas-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: com.jpmc.midascore.TransactionDeserializer
